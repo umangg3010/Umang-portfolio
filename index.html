@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>umang - portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div>
+          <h1 class="logo">Uma</h1>
+        </div>
+        <ul id="menuList">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+          <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+      </nav>
+    </header>
+    <!-- home -->
+
+    <section class="home" id="home">
+      <div class="home-text">
+        <h3>Hy! I'm</h3>
+        <span> <h1>Umang Gupta</h1></span>
+        <h2><span>Front-End</span> Developer</h2>
+        <p class="para">
+          a budding frontend developer with a knack for crafting captivating
+          digital experiences. Through this portfolio, I invite you to dive into
+          my world of creativity, code, and continuous learning.
+        </p>
+        <button><a href="#">Contact Me</a></button>
+      </div>
+    </section>
+
+    <!-- skills -->
+
+    <section class="skills" id="skills">
+      <div class="header-skill">
+        <h2>My<span> Skills</span></h2>
+        <p>Here is my Skills to represent my Expertise</p>
+      </div>
+      <div class="skill-main">
+        <div class="skill-bar">
+          <div class="info">
+            <p>HTML</p>
+            <p class="percent">85%</p>
+          </div>
+          <div class="bar">
+            <span class="html"></span>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <div class="info">
+            <p>CSS</p>
+            <p class="percent">70%</p>
+          </div>
+          <div class="bar">
+            <span class="css"></span>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <div class="info">
+            <p>JavaScript</p>
+            <p class="percent">45%</p>
+          </div>
+          <div class="bar">
+            <span class="javascript"></span>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <div class="info">
+            <p>Bootstrap</p>
+            <p class="percent">30%</p>
+          </div>
+          <div class="bar">
+            <span class="bootstrap"></span>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <div class="info">
+            <p>Git</p>
+            <p class="percent">40%</p>
+          </div>
+          <div class="bar">
+            <span class="git"></span>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <div class="info">
+            <p>React Js</p>
+            <p class="percent">0%</p>
+          </div>
+          <div class="bar">
+            <span class="react"></span>
+          </div>
+        </div>
+        <div class="skill-bar">
+          <div class="info">
+            <p>Node Js</p>
+            <p class="percent">0%</p>
+          </div>
+          <div class="bar">
+            <span class="node"></span>
+          </div>
+        </div>
+
+        <div class="skill-bar">
+          <div class="info">
+            <p>Express Js</p>
+            <p class="percent">0%</p>
+          </div>
+          <div class="bar">
+            <span class="express"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+
+    <section class="services" id="services">
+      <h2 class="heading">My <span>Services</span></h2>
+      <div class="services-container">
+        <div class="services-box">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
+              maiores minima vero modi a excepturi mollitia repellat itaque
+              facere natus minus quas doloribus, quidem et autem enim, incidunt
+              distinctio dicta.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="services-box">
+          <div>
+            <i class="fa-solid fa-paintbrush"></i>
+            <h3>Graphics Designer</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
+              maiores minima vero modi a excepturi mollitia repellat itaque
+              facere natus minus quas doloribus, quidem et autem enim, incidunt
+              distinctio dicta.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+        <div class="services-box">
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h3>Front-End Developer</h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis
+              maiores minima vero modi a excepturi mollitia repellat itaque
+              facere natus minus quas doloribus, quidem et autem enim, incidunt
+              distinctio dicta.
+            </p>
+            <a href="#" class="btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact -->
+
+    <section id="contact" class="contact">
+      <h2 class="heading">Contact <span>Me! </span></h2>
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Address" />
+        </div>
+        <div class="input-box">
+          <input type="text/number" placeholder="Mobile Number" />
+          <input type="text" placeholder="Email Subject" />
+        </div>
+        <textarea
+          name=""
+          id="message"
+          cols="28"
+          rows="8"
+          placeholder="Your Message"
+        ></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+    <footer>
+      <p>&copy; 2024 Umang Gupta. <span>All rights reserved.</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

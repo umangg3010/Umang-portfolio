@@ -1,0 +1,422 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+nav {
+  padding: 10px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(0, 0, 0, 0.9);
+  position: relative;
+  height: 70px;
+  box-shadow: 3px 3px 8px white;
+}
+.logo {
+  color: white;
+  text-shadow: 2px 2px 5px white;
+}
+.logo::after {
+  content: "ng";
+  color: chocolate;
+}
+nav ul {
+  display: flex;
+  gap: 50px;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: chocolate;
+}
+.menu-icon {
+  display: none;
+}
+.menu-icon i {
+  color: white;
+  font-size: 30px;
+}
+/* home */
+section {
+  padding: 160px 16% 90px;
+}
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  color: white;
+}
+.home-text {
+  text-align: center;
+  padding-top: 50px;
+}
+.home-text p {
+  font-size: 16px;
+}
+.home-text h3,
+h2,
+h1 {
+  font-size: 32px;
+}
+.home-text button a {
+  color: black;
+}
+/* skills */
+#skills {
+  color: #fff;
+  width: 100%;
+  height: auto;
+  padding: 80px 13%;
+  background-color: rgb(0, 0, 0, 0.08);
+}
+.header-skill {
+  width: 100%;
+  margin: 70px 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.header-skill h2 {
+  margin-bottom: 5px;
+}
+.skill-main {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 15px;
+}
+.skill-main .skill-bar .info {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+.skill-bar .info .percent {
+  font-weight: bold;
+}
+
+.skill-bar .bar {
+  width: 100%;
+  height: 10px;
+  position: relative;
+  background-color: white;
+  border-radius: 25px;
+  margin-top: 5px;
+}
+.skill-bar .bar span {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: chocolate;
+  border-radius: 25px;
+}
+.skill-bar .bar .html {
+  width: 85%;
+  animation: html 3s;
+}
+@keyframes html {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 85%;
+  }
+}
+
+.skill-bar .bar .css {
+  width: 70%;
+  animation: css 3s;
+}
+@keyframes css {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+.skill-bar .bar .javascript {
+  width: 45%;
+  animation: javascript 3s;
+}
+@keyframes javascript {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 45%;
+  }
+}
+.skill-bar .bar .bootstrap {
+  width: 30%;
+  animation: bootstrap 3s;
+}
+@keyframes bootstrap {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 30%;
+  }
+}
+.skill-bar .bar .git {
+  width: 40%;
+  animation: git 3s;
+}
+@keyframes git {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40%;
+  }
+}
+.skill-bar .bar .node {
+  width: 5%;
+  animation: node 3s;
+}
+@keyframes node {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 5%;
+  }
+}
+.skill-bar .bar .express {
+  width: 5%;
+  animation: express 3s;
+}
+@keyframes express {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 5%;
+  }
+}
+.skill-bar .bar .react {
+  width: 5%;
+  animation: react 3s;
+}
+@keyframes react {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 5%;
+  }
+}
+
+/* services */
+
+.services h2 {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+}
+.services-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.services-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.services-box div {
+  width: 350px;
+  border: 1px solid white;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  box-shadow: 1px 1px 10px chocolate, 1px 1px 10px chocolate;
+}
+.services-box div:hover {
+  border: 3px solid chocolate;
+}
+
+.services-box div i {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: black;
+}
+.services-box div h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: chocolate;
+}
+.services-box div p {
+  font-size: 15px;
+  margin-bottom: 2rem;
+  color: black;
+}
+
+/* contact*/
+
+.contact h2 {
+  font-size: 45px;
+  color: white;
+  text-align: center;
+  margin-bottom: 50px;
+}
+span {
+  color: chocolate;
+}
+.contact form {
+  width: 600px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea {
+  width: 100%;
+  padding: 18px;
+  background: transparent;
+  border-radius: 6px;
+  font-size: 16px;
+  border-color: chocolate;
+  color: white;
+  margin: 5px 0;
+}
+.contact form .input-box input {
+  width: 49%;
+}
+.contact form textarea {
+  resize: none;
+}
+button,
+.btn {
+  padding: 12px 32px;
+  background-color: chocolate;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  box-shadow: 0 0 10px chocolate;
+  font-size: 16px;
+  color: black;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 20px 0;
+  transition: 0.5s;
+}
+
+.btn:hover,
+button:hover {
+  box-shadow: none;
+}
+/* footer */
+footer {
+  background-color: black;
+  box-shadow: 5px 0 10px white;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+/* responsive */
+
+@media screen and (max-width: 625px) {
+  nav ul {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+    background-color: white;
+    gap: 0;
+    overflow: hidden;
+  }
+  nav ul li {
+    padding: 20px;
+    padding-top: 0;
+  }
+  nav ul li a {
+    color: chocolate;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  #menuList {
+    transition: all 0.5s;
+  }
+  /* skills */
+  .skill-main {
+    display: block;
+    flex-direction: column;
+  }
+  .services-container {
+    /*services */
+    flex-direction: column;
+    align-items: center;
+  }
+  /* contact */
+
+  form button {
+    position: absolute;
+    left: 60px;
+  }
+  .contact form .input-box input {
+    margin: 8px 5px;
+  }
+  .contact form textarea {
+    display: block;
+    margin: auto;
+    position: relative;
+    width: auto;
+    margin: 0px;
+  }
+}
+
+@media screen and (min-width: 626px) and (max-width: 980px) {
+  .services-container {
+    flex-direction: column;
+  }
+  .services-box div {
+    width: 950px;
+  }
+}
+@media screen and (min-width: 981px) {
+  .services-box div {
+    width: 300px;
+  }
+}
